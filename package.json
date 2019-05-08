@@ -1,18 +1,17 @@
 {
   "name": "react-scrollspy-animate",
-  "version": "0.1.0",
-  "main": "./lib/components/Scrollspy.js",
+  "version": "0.1.2",
+  "main": "./lib/index.js",
   "files": [
     "README.md",
-    "./lib/components/components/scrollspy.js",
-    "./lib/components/components/helpers.js",
+    "./lib/*",
     "package.json"
   ],
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "NODE_ENV=production babel ./src/lib --out-dir ./lib -s inline",
+    "build": "rm -rf dist && NODE_ENV=production babel ./src/lib --out-dir ./lib -s inline --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "prepublish": "npm run build"
   },
   "devDependencies": {

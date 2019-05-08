@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import Helpers from '../../utils/helpers'
+import Helpers from './helpers'
 
 export default class Scrollspy extends React.Component {
   static get propTypes() {
